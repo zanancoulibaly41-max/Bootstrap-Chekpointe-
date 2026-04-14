@@ -1,0 +1,188 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 15px 40px;
+}
+
+.logo{
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover{
+    color: orange;
+}
+
+/* SECTION HERO */
+.Welcon{
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+
+.Welcon h1{
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.Welcon img{
+    width: 300px;
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+.Welcon p{
+    margin-bottom: 20px;
+}
+
+.btn{
+    background: orange;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background: #ff8800;
+}
+
+/* MENU */
+.menu{
+    padding: 40px;
+    text-align: center;
+}
+
+.menu h2{
+    margin-bottom: 30px;
+}
+
+/* GRID MENU */
+.menu-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.menu-item{
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.menu-item img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item h3{
+    margin: 10px 0;
+}
+
+.menu-item span{
+    color: orange;
+    font-weight: bold;
+}
+
+/* SECTION 2 COLONNES */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px;
+    align-items: center;
+}
+
+.img2{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* CONTACT */
+#contact{
+    padding: 40px;
+    background: #f9f9f9;
+}
+
+form{
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    background: #222;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: orange;
+}
+
+/* FOOTER */
+footer{
+    background: #222;
+    color: #fff;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+footer div{
+    margin-bottom: 15px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+
+    .menu-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .navbar{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
